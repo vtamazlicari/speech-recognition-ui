@@ -1,0 +1,16 @@
+<div *ngIf="isLoaded" class="container slide-in-bck-center">
+  <div class="mt-5">
+    <app-upload-file [file]="file" (filesEmit)="getFiles($event)"></app-upload-file>
+  </div>
+  <div class="mt-10">
+    <mat-card>
+      <mat-card-title>
+        <button [disabled]="!file" mat-raised-button color="primary" (click)="closeDialog()">Upload</button>
+      </mat-card-title>
+      <mat-card-content>
+        <mat-card-subtitle>Text from audio file: </mat-card-subtitle>
+        <span>{{text}}</span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

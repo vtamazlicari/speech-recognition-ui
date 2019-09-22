@@ -1,0 +1,18 @@
+.upload-content {
+  .file-name-wrapper {
+    display: block;
+    border: 1px solid #ABABAB;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 1px #E1E1E1;
+    min-width: 400px;
+    text-align: center;
+  }
+
+  .file-name {
+    line-height: 2;
+  }
+
+  .upload-file {
+    display: flex;
+  }
+}

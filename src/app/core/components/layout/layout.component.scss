@@ -1,0 +1,12 @@
+.example-container {
+  height: calc(100% - 64px);
+  width: 100%;
+}
+
+.nav-bar {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+

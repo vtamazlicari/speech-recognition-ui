@@ -1,0 +1,13 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <app-navbar (tabSwitch)="setTabName($event)"></app-navbar>
+  </mat-drawer>
+  <mat-drawer-content>
+      <ng-container [ngSwitch]="tab">
+        <app-transform-speech-in-text *ngSwitchCase="tabs.TRANSFORM_SPEECH_TO_TEXT"></app-transform-speech-in-text>
+        <app-transform-audio-file-to-text *ngSwitchCase="tabs.TRANSFORM_AUDIO_TO_TEXT"></app-transform-audio-file-to-text>
+        <app-special-actions *ngSwitchCase="tabs.SPECIAL_ACTIONS"></app-special-actions>
+        <app-welcome *ngSwitchDefault></app-welcome>
+      </ng-container>
+  </mat-drawer-content>
+</mat-drawer-container>
